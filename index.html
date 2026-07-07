@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="장OO — 가능성보다 호기심이 먼저인 기획자. 데이터와 AI, 그리고 사람을 연결하는 아이디어를 서비스로 구현합니다.">
+  <title>장OO | Portfolio</title>
+
+  <!-- Pretendard 폰트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+
+  <!-- Font Awesome 아이콘 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 고정 내비게이션 ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">장OO</a>
+
+      <nav class="nav__menu" aria-label="주요 섹션">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#experiences" class="nav__link">Experiences</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크 모드 전환">
+          <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--light"></i>
+          <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--dark"></i>
+        </button>
+
+        <button type="button" class="nav__hamburger" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== 히어로 섹션 ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-text" aria-hidden="true">Curiosity-First</div>
+      <div class="hero__content container reveal">
+        <p class="hero__tagline">Curiosity-First</p>
+        <h1 class="hero__name">장OO</h1>
+        <p class="hero__headline">가능성보다 호기심이 먼저인 기획자</p>
+        <div class="hero__intro">
+          <p>데이터와 AI, 그리고 사람을 연결하는 아이디어를 눈에 보이는 서비스로 구현합니다.</p>
+          <p>국제 교류와 현장 프로젝트를 통해 다양한 문화와 기술을 직접 체험했습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About 섹션 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">About</span>
+          <h2 class="section__title">저를 소개합니다</h2>
+        </div>
+
+        <article class="card card--wide reveal">
+          <p class="about__text">
+            성균관대학교 글로벌경영학과와 소프트웨어 복수전공을 병행하며, 평생 배워도 배울 것이 남는다는 믿음이 저를 움직입니다. 데이터·기획·AI를 오가며 아이디어를 구체화하고, 사용자 경험을 설계하는 과정을 사랑합니다. 국제 교환학생 프로그램을 통해 여러 문화·산업의 관점을 습득했으며, 이제는 그 경험을 바탕으로 실제 비즈니스 가치를 창출하는 것이 목표입니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Education 섹션 ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Education</span>
+          <h2 class="section__title">배움의 여정</h2>
+        </div>
+
+        <ol class="timeline reveal">
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card">
+              <span class="timeline__badge">2023 ~ 2027 (예정)</span>
+              <h3 class="timeline__org">성균관대학교 글로벌경영학과, 소프트웨어 복수전공</h3>
+              <p class="timeline__summary">경영학·기술을 통합적으로 학습</p>
+              <ul class="timeline__bullets">
+                <li>우수 학부 연구생 (4개월, A 교수님 지도)</li>
+                <li>프로그래밍 동아리 '멋쟁이사자처럼' (2년)</li>
+                <li>교내 밴드 동아리 베이스 (2년)</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card">
+              <span class="timeline__badge">2025 여름</span>
+              <h3 class="timeline__org">University of Tasmania International Internship – AI 프로젝트</h3>
+              <p class="timeline__summary">오디오 데이터 활용 머신러닝 실습</p>
+              <ul class="timeline__bullets">
+                <li><strong>프로젝트</strong>: 멸종위기 조류 보호를 위한 음성 분류 AI</li>
+                <li><strong>역할</strong>: Python·TensorFlow 기반 전처리·모델 학습 담당</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card">
+              <span class="timeline__badge">2025 겨울</span>
+              <h3 class="timeline__org">Hanken School of Economics 학점교류 – Sustainable Finance</h3>
+              <p class="timeline__summary">ESG 기반 금융 전략 분석</p>
+              <ul class="timeline__bullets">
+                <li><strong>활동</strong>: ESG 기반 금융 전략·지배구조 분석 및 평가</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card">
+              <span class="timeline__badge">2025 겨울</span>
+              <h3 class="timeline__org">Lund University 학점교류 – Critical Management</h3>
+              <p class="timeline__summary">지속가능·사회적 관점 경영 학습</p>
+              <ul class="timeline__bullets">
+                <li><strong>활동</strong>: 경영 담론·사례 분석, 사회적·환경적 이슈 탐구</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card">
+              <span class="timeline__badge">2024 여름</span>
+              <h3 class="timeline__org">HWR Berlin 학점교류 – Entrepreneurship &amp; Innovation</h3>
+              <p class="timeline__summary">스타트업 비즈니스 모델 개발</p>
+              <ul class="timeline__bullets">
+                <li><strong>활동</strong>: 스타트업 비즈니스 모델 개발 프로젝트 진행</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card">
+              <span class="timeline__badge">2020 ~ 2022</span>
+              <h3 class="timeline__org">외국어고등학교 독일어과</h3>
+              <p class="timeline__summary">독일어와 문화적 기반 습득</p>
+              <ul class="timeline__bullets">
+                <li><strong>명예</strong>: 명예의 전당 등재</li>
+                <li><strong>리더십</strong>: 학술동아리 회장</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Experiences 섹션 ===== -->
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Experiences</span>
+          <h2 class="section__title">프로젝트 &amp; 경험</h2>
+        </div>
+
+        <div class="experience-grid">
+          <article class="card experience-card reveal">
+            <h3 class="experience-card__title">TassieBirdAI 해커톤</h3>
+            <p class="experience-card__meta">2025-07 · University of Tasmania</p>
+            <ul class="experience-card__bullets">
+              <li>멸종위기 조류 보호용 음성 분류 AI 개발</li>
+              <li>Python·TensorFlow으로 오디오 전처리·모델 학습 담당</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">AI</span>
+              <span class="tag">Audio Processing</span>
+              <span class="tag">Hackathon</span>
+            </div>
+          </article>
+
+          <article class="card experience-card reveal">
+            <h3 class="experience-card__title">A사(뷰티테크) 신사업 리서치 &amp; 전략</h3>
+            <p class="experience-card__meta">2025-06</p>
+            <ul class="experience-card__bullets">
+              <li>피부 진단 기기 비즈니스 모델 및 데이터 가치사슬 조사</li>
+              <li>리서치 결과를 서비스 전략으로 전환해 제안 도출</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">Market Research</span>
+              <span class="tag">Business Strategy</span>
+              <span class="tag">Data Value Chain</span>
+            </div>
+          </article>
+
+          <article class="card experience-card reveal">
+            <h3 class="experience-card__title">B사(가상자산 거래소) 유저·거래량 증대 전략</h3>
+            <p class="experience-card__meta">2025-05</p>
+            <ul class="experience-card__bullets">
+              <li>웹 크롤링·사용자 인터뷰로 행동 패턴 도출</li>
+              <li>사용자 관점 UX 개선 아이디어 3가지 제시</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">UX Design</span>
+              <span class="tag">User Research</span>
+              <span class="tag">Growth Strategy</span>
+            </div>
+          </article>
+
+          <article class="card experience-card reveal">
+            <h3 class="experience-card__title">Bus Stop Safety 보행자 안전 장치 프로토타입</h3>
+            <p class="experience-card__meta">2024-01 ~ 02</p>
+            <ul class="experience-card__bullets">
+              <li>버스 방향지시등 인식 하드웨어 프로토타입 설계·제작</li>
+              <li>현장 테스트·리서치를 통한 아이디어 검증</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">Hardware Design</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">User Testing</span>
+            </div>
+          </article>
+
+          <article class="card experience-card reveal">
+            <h3 class="experience-card__title">국제 학점교류 경험</h3>
+            <p class="experience-card__meta">2025-07 ~ 2025-02 (다중)</p>
+            <ul class="experience-card__bullets">
+              <li>Sustainable Finance, Critical Management, Entrepreneurship 등 다양한 경영·혁신 분야 학습</li>
+              <li>현지 팀원과 협업해 프로젝트 발표 및 보고서 작성</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">International Education</span>
+              <span class="tag">Cross-Cultural</span>
+              <span class="tag">Business Insight</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills 섹션 ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Skills</span>
+          <h2 class="section__title">핵심 역량</h2>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skills-category">
+            <h3 class="skills-category__title">Programming</h3>
+            <div class="tag-group">
+              <span class="tag tag--skill">Python</span>
+              <span class="tag tag--skill">JavaScript</span>
+              <span class="tag tag--skill">HTML/CSS</span>
+              <span class="tag tag--skill">React</span>
+              <span class="tag tag--skill">Next.js</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3 class="skills-category__title">AI &amp; Data</h3>
+            <div class="tag-group">
+              <span class="tag tag--skill">Machine Learning</span>
+              <span class="tag tag--skill">Data Analysis</span>
+              <span class="tag tag--skill">Audio Processing</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3 class="skills-category__title">Design &amp; UX</h3>
+            <div class="tag-group">
+              <span class="tag tag--skill">Figma</span>
+              <span class="tag tag--skill">UX Research</span>
+              <span class="tag tag--skill">Prototyping</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3 class="skills-category__title">Business &amp; Tools</h3>
+            <div class="tag-group">
+              <span class="tag tag--skill">Market Research</span>
+              <span class="tag tag--skill">Data Visualization</span>
+              <span class="tag tag--skill">Git/GitHub</span>
+              <span class="tag tag--skill">Notion</span>
+              <span class="tag tag--skill">Slack</span>
+              <span class="tag tag--skill">Jira</span>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3 class="skills-category__title">Languages</h3>
+            <div class="tag-group">
+              <span class="tag tag--skill">한국어 (모국어)</span>
+              <span class="tag tag--skill">영어 (업무)</span>
+              <span class="tag tag--skill">독일어 (일상)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact 섹션 ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">함께 이야기해요</h2>
+        </div>
+
+        <div class="contact__message card card--wide reveal">
+          <p>궁금한 점이 있으면 언제든 DM 주세요. 여러분의 이야기가 시작되는 순간을 기대합니다.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 푸터 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 장OO. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== 챗봇 ===== -->
+  <div class="chatbot" id="chatbot">
+    <button type="button" class="chatbot__toggle" id="chatToggle" aria-label="챗봇 열기" aria-expanded="false">
+      <i class="fa-solid fa-comment-dots chatbot__toggle-icon chatbot__toggle-icon--open"></i>
+      <i class="fa-solid fa-xmark chatbot__toggle-icon chatbot__toggle-icon--close"></i>
+    </button>
+
+    <div class="chatbot__panel" id="chatPanel" aria-hidden="true" role="dialog" aria-label="AI 비서 채팅">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <span class="chatbot__status"></span>
+          <h3 class="chatbot__title">AI 비서</h3>
+        </div>
+        <p class="chatbot__subtitle">궁금한 점을 편하게 물어보세요</p>
+      </div>
+
+      <div class="chatbot__messages" id="chatMessages">
+        <div class="chatbot__message chatbot__message--bot">
+          <p>안녕하세요! 이 포트폴리오 주인에 대해 궁금한 점이 있으면 편하게 물어보세요.</p>
+        </div>
+      </div>
+
+      <form class="chatbot__form" id="chatForm">
+        <textarea
+          class="chatbot__input"
+          id="chatInput"
+          placeholder="메시지를 입력하세요..."
+          rows="1"
+          autocomplete="off"
+        ></textarea>
+        <button type="submit" class="chatbot__send" id="chatSend" aria-label="메시지 전송">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 스크립트 -->
+  <script src="script.js"></script>
+</body>
+</html>

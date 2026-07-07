@@ -1,8 +1,8 @@
 /* ===== CSS 변수 — 라이트 테마 (기본) ===== */
 :root {
-  --accent-color: #bee433;
-  --accent-secondary: #6c9e17;
-  --accent-warm: #42810c;
+  --accent-color: #870404;
+  --accent-secondary: #d34141;
+  --accent-warm: #9104042c;
 
   --bg-primary: #FFFFFF;
   --bg-secondary: #F7F8FA;
